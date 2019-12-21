@@ -1,0 +1,6 @@
+The project contains:
+1.Book Collection Facade(Manager)
+2.User Facade(Manager)
+3.Loyalty Program Facade(Manager)
+4.Pricing Facade(Manager)
+5. Blockbuster Facade(Manager)

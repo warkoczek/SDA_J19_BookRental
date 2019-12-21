@@ -1,0 +1,9 @@
+pl\awarkoczewski\books\model\Book.class
+pl\awarkoczewski\blockbusters\repository\InMemoryBlockBusterRepository.class
+pl\awarkoczewski\books\repository\BookRepository.class
+pl\awarkoczewski\blockbusters\BlockbusterFacade.class
+pl\awarkoczewski\App.class
+pl\awarkoczewski\blockbusters\model\Blockbuster.class
+pl\awarkoczewski\books\model\BookNotFoundException.class
+pl\awarkoczewski\blockbusters\repository\BlockbusterRepository.class
+pl\awarkoczewski\books\model\Genre.class
