@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4daf49f9-0cf0-4110-a3d0-7c93042d549c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/BookRentalSpecification.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/BookRentalSpecification.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/BookRentalFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/Rental.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/CurrentTimeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/TimeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/points/LoyaltyProgramFacadeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,43 +32,34 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/InMemoryBookRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/BookRentalSpecification.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="-519">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/awarkoczewski/points/LoyaltyProgramFacadeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/repository/InMemoryFriendRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,26 +67,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="153">
+              <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +79,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="105">
+              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+              <folding>
+                <element signature="e#187#188#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/Rental.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/BookRentalFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,17 +125,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="84">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointCalculator.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="338">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,8 +149,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -160,6 +182,20 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/FriendFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/App.java" />
         <option value="$PROJECT_DIR$/docs/BookRentalSpecification.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/Rental.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/TimeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/CurrentTimeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/points/LoyaltyProgramFacadeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/BookRentalFacade.java" />
       </list>
     </option>
   </component>
@@ -328,6 +364,22 @@
               <item name="SDA_J19_BookRental" type="b2602c69:ProjectViewProjectNode" />
               <item name="SDA_J19_BookRental" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rentals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDA_J19_BookRental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDA_J19_BookRental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDA_J19_BookRental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDA_J19_BookRental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,6 +404,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SDA_J19_BookRental" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SDA_J19_BookRental" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="points" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,6 +428,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.awarkoczewski.points" />
       <recent name="pl.awarkoczewski.friends.repository" />
       <recent name="pl.awarkoczewski.books.repository" />
     </key>
@@ -387,7 +448,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.awarkoczewski.App" />
       <module name="SDA_J19_BookRental" />
@@ -431,8 +492,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForExistingFriend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDA_J19_BookRental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.awarkoczewski.points.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.awarkoczewski.points" />
+      <option name="MAIN_CLASS_NAME" value="pl.awarkoczewski.points.LoyaltyProgramFacadeTest" />
+      <option name="METHOD_NAME" value="getRentalAwardShouldCalculatePointsForExistingFriend" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SDA_J19_BookRental" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.awarkoczewski.points.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.awarkoczewski.points" />
+      <option name="MAIN_CLASS_NAME" value="pl.awarkoczewski.points.LoyaltyProgramFacadeTest" />
+      <option name="METHOD_NAME" value="getRentalAwardShouldCalculatePointsForNewFriend" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend" />
+        <item itemvalue="JUnit.LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForExistingFriend" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.InMemoryBookRepositoryTest" />
         <item itemvalue="JUnit.InMemoryFriendRepositoryTest" />
@@ -458,6 +553,24 @@
     </history-entry>
     <history-entry file="InMemoryBookRepositoryTest - 2019.12.21 at 19h 26m 57s.xml">
       <configuration name="InMemoryBookRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForExistingFriend - 2019.12.24 at 11h 02m 32s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForExistingFriend" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForExistingFriend - 2019.12.24 at 11h 02m 42s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForExistingFriend" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForExistingFriend - 2019.12.24 at 11h 02m 51s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForExistingFriend" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForNewFriend - 2019.12.24 at 16h 38m 56s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForNewFriend - 2019.12.24 at 16h 42m 33s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoyaltyProgramFacadeTest_getRentalAwardShouldCalculatePointsForNewFriend - 2019.12.24 at 16h 45m 25s.xml">
+      <configuration name="LoyaltyProgramFacadeTest.getRentalAwardShouldCalculatePointsForNewFriend" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -625,28 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/repository/InMemoryFriendRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1055">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1272#1273#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/FriendFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -684,27 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/repository/FriendRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/BookRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/InMemoryBookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -728,52 +802,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/TimeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="126">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/time/repository/CurrentTimeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/PointsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="168">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/InMemoryBookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="20" column="110" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/repository/FriendRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/repository/InMemoryPointsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="21">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/friends/repository/InMemoryFriendRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="21">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/awarkoczewski/points/LoyaltyProgramFacadeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        <state relative-caret-position="84">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/PointsNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding>
+            <element signature="e#187#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/Rental.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/BookRentalFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
