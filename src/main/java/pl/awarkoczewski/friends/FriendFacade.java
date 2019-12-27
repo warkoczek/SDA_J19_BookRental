@@ -13,7 +13,7 @@ public class FriendFacade {
         return friendRepository.addNewFriend(friend);
     }
 
-    public void cancelFriend(Friend friend){
+    public void removeFriend(Friend friend){
 
         friendRepository.delete(friend);
     }

@@ -16,7 +16,7 @@ public interface BookRepository {
 
     Book findBookById(Long id);
 
-    Book findBookByTitle(String title);
+    Book findBooksByTitle(String title);
 
     List<Book> findBooksByGenre(Genre genre);
 

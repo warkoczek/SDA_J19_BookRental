@@ -25,7 +25,7 @@ public class LoyaltyProgramFacadeTest {
         //given
         Book book = new Book(2l, "Guns Germs and Steal", "Jared Diamond", Genre.SCIENCE, LocalDate.of(2011,12,12));
         Friend friend = new Friend(2l, "Filip","Gondulek","fgondulek@yahoo.com");
-        Rental rental = new Rental(book, friend, LocalDate.of(2019,12,12), LocalDate.of(2019,12,22));
+        Rental rental = new Rental(friend, book, LocalDate.of(2019,12,12), LocalDate.of(2019,12,22));
         Integer expectedPoints = 26;
 
         //when
@@ -42,7 +42,7 @@ public class LoyaltyProgramFacadeTest {
         //given
         Book book = new Book(2l, "Guns Germs and Steal", "Jared Diamond", Genre.SCIENCE, LocalDate.of(2011,12,12));
         Friend friend = new Friend(5l, "Zdzisiu", "Zdzisiek", "zzdzisiek@yahoo.com");
-        Rental rental = new Rental(book,friend, LocalDate.of(2019,12,12),LocalDate.of(2019,12,22));
+        Rental rental = new Rental(friend,book, LocalDate.of(2019,12,12),LocalDate.of(2019,12,22));
         Integer expectedResult =11;
 
         //when

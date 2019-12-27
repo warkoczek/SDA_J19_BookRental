@@ -25,14 +25,14 @@ public class InMemoryBookRepository implements BookRepository {
     }
 
 
-    //what if inserting movie is a duplicate?????
+    //what if inserting book is a duplicate?????
     @Override
     public Book insertBook(Book book) {
         book.setId(nextId);
         bookList.add(book);
         return book;
     }
-    //after deleted book, id stays empty, is not assigned to other book, is it LinkedList?
+    //after deleted book, id stays empty, is not assigned to other book, is it a LinkedList?
     @Override
     public void delete(Book book) {
 
@@ -59,7 +59,7 @@ public class InMemoryBookRepository implements BookRepository {
     }
 
     @Override
-    public Book findBookByTitle(String title) {
+    public Book findBooksByTitle(String title) {
 
         return bookList.stream()
                 .filter(book -> book.getTitle().equalsIgnoreCase(title))

@@ -11,8 +11,9 @@ import java.time.LocalDate;
 @Getter
 public class Rental {
 
-    private Book book;
+
     private Friend friend;
+    private Book book;
     private LocalDate rentDate;
     private LocalDate returnDate;
 }

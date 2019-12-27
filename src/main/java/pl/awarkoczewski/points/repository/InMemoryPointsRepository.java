@@ -3,6 +3,7 @@ package pl.awarkoczewski.points.repository;
 import pl.awarkoczewski.points.model.Points;
 import pl.awarkoczewski.points.model.PointsNotFoundException;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -48,4 +49,6 @@ public class InMemoryPointsRepository implements PointsRepository {
         pointsToUpdate.setPoints(points.getPoints());
         return pointsToUpdate;
     }
+
+
 }

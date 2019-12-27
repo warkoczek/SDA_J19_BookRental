@@ -18,9 +18,9 @@ public class BookFacade {
         return bookRepository.insertBook(book);
     }
 
-    public Book getBookByTitle(String title){
+    public Book showBookByTitle(String title){
 
-        return bookRepository.findBookByTitle(title);
+        return bookRepository.findBooksByTitle(title);
     }
 
     public List<Book> showBooksByGenre(Genre genre){

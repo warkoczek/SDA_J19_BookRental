@@ -3,4 +3,7 @@ The project contains:
 2.Friend Facade(Manager)
 3.Loyalty Program Facade(Manager)
 4.Pricing Facade(Manager)
-5. Blockbuster Facade(Manager)
+
+TODO more tests, searchBookByPhrase, searchByGenre(String parameter)
+
+

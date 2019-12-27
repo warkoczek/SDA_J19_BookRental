@@ -28,4 +28,8 @@ public class InMemoryBookRepositoryTest {
         Assert.assertEquals(expectedResult, result.getId());
     }
 
+    @Test
+    public void name() {
+
+    }
 }

@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @AllArgsConstructor
-@Getter
+@Data
 public class Points {
 
     @Setter
@@ -19,5 +19,10 @@ public class Points {
     public Integer rentalPointsAdded(Integer pointsToAdd){
 
         return points += pointsToAdd;
+    }
+
+    public String toString(){
+
+        return "Your current points amount is: " + points;
     }
 }
