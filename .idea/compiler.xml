@@ -9,5 +9,8 @@
         <module name="SDA_J19_BookRental" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SDA_J19_BookRental-Hibernate" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

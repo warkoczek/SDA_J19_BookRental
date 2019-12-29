@@ -6,6 +6,7 @@ import pl.awarkoczewski.time.repository.TimeRepository;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Map;
 
 public class DefaultPointsCalculator implements PointsCalculator {
 
@@ -52,6 +53,8 @@ public class DefaultPointsCalculator implements PointsCalculator {
             return 0;
         }
     }
+
+
 
 
 }

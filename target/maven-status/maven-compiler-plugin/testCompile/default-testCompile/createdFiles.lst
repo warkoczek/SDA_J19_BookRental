@@ -1,0 +1,5 @@
+pl\awarkoczewski\books\BookFacadeTest.class
+pl\awarkoczewski\points\LoyaltyProgramFacadeTest.class
+pl\awarkoczewski\books\repository\InMemoryBookRepositoryTest.class
+pl\awarkoczewski\pricing\PricingFacadeTest.class
+pl\awarkoczewski\friends\repository\InMemoryFriendRepositoryTest.class
