@@ -6,7 +6,10 @@ import pl.awarkoczewski.books.model.Genre;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class InMemoryBookRepository implements BookRepository {
@@ -21,6 +24,8 @@ public class InMemoryBookRepository implements BookRepository {
         bookList.add(new Book(2l, "Guns Germs and Steal", "Jared Diamond",Genre.SCIENCE, LocalDate.of(2011,12,12)));
         bookList.add(new Book(3l, "The Origin of Species", "Darwin",Genre.SCIENCE, LocalDate.of(1885,12,12)));
         bookList.add(new Book(4l, "Flights", "Olga Tokarczuk",Genre.SF, LocalDate.of(2011,12,12)));
+        bookList.add(new Book(5l, "Steal like an Artist","Austin Kleon",Genre.ART, LocalDate.of(2012,02,28)));
+        bookList.add(new Book(6l, "Steal this urine test", "Abbie Hoffman", Genre.SCIENCE,LocalDate.of(2019,12,12)));
         nextId = Long.valueOf(bookList.size()+1);
     }
 
@@ -72,6 +77,26 @@ public class InMemoryBookRepository implements BookRepository {
 
         return bookList.stream()
                 .filter(book -> book.getGenre().equals(genre.getName()))
+                .collect(Collectors.toList());
+
+    }
+
+    @Override
+    public Book findBookByPhrase(String phrase) {
+
+        return bookList.stream()
+                .filter(book -> book.getTitle().toLowerCase().contains(phrase.toLowerCase()))
+                .findFirst().orElseThrow(() -> new BookNotFoundException("No book title with this phrase"));
+
+    }
+
+    @Override
+    public List<String> searchBooksWithPhrase(String phrase) {
+
+        return bookList.stream()
+                .filter(book -> book.getTitle().toLowerCase().contains(phrase.toLowerCase()))
+                .map(book -> book.getTitle())
+                .sorted(Comparator.naturalOrder())
                 .collect(Collectors.toList());
 
     }

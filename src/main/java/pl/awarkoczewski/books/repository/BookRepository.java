@@ -5,6 +5,7 @@ import pl.awarkoczewski.books.model.Genre;
 
 
 import java.util.List;
+import java.util.Optional;
 
 public interface BookRepository {
 
@@ -20,4 +21,7 @@ public interface BookRepository {
 
     List<Book> findBooksByGenre(Genre genre);
 
+    Book findBookByPhrase(String phrase);
+
+    List<String> searchBooksWithPhrase(String phrase);
 }

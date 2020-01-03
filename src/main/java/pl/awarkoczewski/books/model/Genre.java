@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public enum Genre {
 
-    SF("SF"), CRIMINAL("CRIMINAL"), ADVENTURE("ADVENTURE"), SCIENCE("SCIENCE");
+    ART("ART"),SF("SF"), CRIMINAL("CRIMINAL"), ADVENTURE("ADVENTURE"), SCIENCE("SCIENCE");
 
     private String name;
 }
