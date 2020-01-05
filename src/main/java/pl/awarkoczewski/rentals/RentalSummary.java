@@ -13,6 +13,6 @@ public class RentalSummary {
     private Points points;
 
     public String toString(){
-        return "Price of your rental is " + price + "\n" + "You current points amount is: " + points;
+        return "Price of your rental is " + price + "\n" + "Your current points amount is: " + points;
     }
 }

@@ -1,9 +1,9 @@
 package pl.awarkoczewski;
 
 
+import pl.awarkoczewski.books.BookFacade;
 import pl.awarkoczewski.books.model.Book;
 import pl.awarkoczewski.books.model.Genre;
-import pl.awarkoczewski.books.repository.BookRepository;
 import pl.awarkoczewski.books.repository.InMemoryBookRepository;
 import pl.awarkoczewski.friends.model.Friend;
 import pl.awarkoczewski.points.LoyaltyProgramFacade;
@@ -38,8 +38,12 @@ public class App {
 
         System.out.println(rentalSummary);
 
+        BookFacade bookFacade = new BookFacade(new InMemoryBookRepository());
+        List<Book> booksByGenre = bookFacade.showBooksByGenre("SF");
 
-
+        for(Book b : booksByGenre) {
+            System.out.println(b.getTitle());
+        }
 
     }
 

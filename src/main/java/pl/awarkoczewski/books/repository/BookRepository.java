@@ -19,7 +19,7 @@ public interface BookRepository {
 
     Book findBooksByTitle(String title);
 
-    List<Book> findBooksByGenre(Genre genre);
+    List<Book> findBooksByGenre(String genre);
 
     Book findBookByPhrase(String phrase);
 

@@ -23,6 +23,6 @@ public class Points {
 
     public String toString(){
 
-        return "Your current points amount is: " + points;
+        return points.toString();
     }
 }

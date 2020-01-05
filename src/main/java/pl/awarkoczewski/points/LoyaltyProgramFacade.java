@@ -11,7 +11,7 @@ import pl.awarkoczewski.rentals.Rental;
 import java.util.Optional;
 
 @AllArgsConstructor
-public class LoyaltyProgramFacade {
+public class LoyaltyProgramFacade<T> {
 
     PointsCalculator pointsCalculator;
     PointsRepository pointsRepository;

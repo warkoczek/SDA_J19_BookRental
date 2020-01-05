@@ -1,5 +1,6 @@
 package pl.awarkoczewski.points.calculator;
 
+import pl.awarkoczewski.books.model.Book;
 import pl.awarkoczewski.rentals.Rental;
 import pl.awarkoczewski.time.repository.CurrentTimeRepository;
 import pl.awarkoczewski.time.repository.TimeRepository;

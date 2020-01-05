@@ -29,7 +29,22 @@ public class InMemoryBookRepositoryTest {
         Assert.assertEquals(expectedResult, result.getId());
     }
 
+    @Test
+    public void searchBooksByGenreShouldReturnTitleFlightsForIndex0InTheList(){
 
+        //given
+        Book book = new Book(5L, "Flights", "Olga Tokarczuk", Genre.SF,
+                LocalDate.of(2011,12,12));
+        final String genre = "SF";
+        final String expectedResult = "Flights";
+
+        //when
+        List<Book> books = bookRepository.findBooksByGenre(genre);
+
+        //then
+        Assert.assertEquals(expectedResult,books.get(0).getTitle());
+
+    }
     @Test
     public void searchBookByPhraseShouldReturnTitleGunsGermsAndStealForPhraseSteal(){
 

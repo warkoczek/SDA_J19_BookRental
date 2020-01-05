@@ -8,8 +8,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class InMemoryBookRepository implements BookRepository {
@@ -20,7 +18,7 @@ public class InMemoryBookRepository implements BookRepository {
     public InMemoryBookRepository() {
         bookList = new ArrayList<>();
 
-        bookList.add(new Book(1l, "Collapse", "Jared Diamond",Genre.SCIENCE, LocalDate.of(2010,12,12)));
+        bookList.add(new Book(1l, "Collapse", "Jared Diamond", Genre.SCIENCE, LocalDate.of(2010,12,12)));
         bookList.add(new Book(2l, "Guns Germs and Steal", "Jared Diamond",Genre.SCIENCE, LocalDate.of(2011,12,12)));
         bookList.add(new Book(3l, "The Origin of Species", "Darwin",Genre.SCIENCE, LocalDate.of(1885,12,12)));
         bookList.add(new Book(4l, "Flights", "Olga Tokarczuk",Genre.SF, LocalDate.of(2011,12,12)));
@@ -73,10 +71,10 @@ public class InMemoryBookRepository implements BookRepository {
     }
 
     @Override
-    public List<Book> findBooksByGenre(Genre genre) {
+    public List<Book> findBooksByGenre(String genre) {
 
         return bookList.stream()
-                .filter(book -> book.getGenre().equals(genre.getName()))
+                .filter(book -> book.getGenre().getName().equalsIgnoreCase(genre))
                 .collect(Collectors.toList());
 
     }

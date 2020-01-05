@@ -4,13 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 import pl.awarkoczewski.books.model.Book;
 import pl.awarkoczewski.books.model.Genre;
-import pl.awarkoczewski.books.repository.BookRepository;
 import pl.awarkoczewski.books.repository.InMemoryBookRepository;
 
 import java.time.LocalDate;
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class BookFacadeTest {
 
