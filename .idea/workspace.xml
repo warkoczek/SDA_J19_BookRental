@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daf49f9-0cf0-4110-a3d0-7c93042d549c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/MagazineFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/IssueFrequency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/MGenre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/Magazine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/MagazineNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/repository/InMemoryMagazineRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/magazines/model/repository/MagazineRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/magazines/model/repository/InMemoryMagazineRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/BookFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/BookFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/InMemoryBookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/InMemoryBookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/LoyaltyProgramFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/calculator/PointsCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/points/model/Points.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/awarkoczewski/rentals/RentalSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/BookFacadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/BookFacadeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/books/BookFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/books/BookFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/books/repository/InMemoryBookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/books/repository/InMemoryBookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/LoyaltyProgramFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/LoyaltyProgramFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/calculator/DefaultPointsCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/model/Points.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/points/model/Points.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/rentals/RentalSummary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/awarkoczewski/rentals/RentalSummary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/awarkoczewski/books/BookFacadeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/awarkoczewski/books/BookFacadeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/awarkoczewski/books/repository/InMemoryBookRepositoryTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="4daf49f9-0cf0-4110-a3d0-7c93042d549c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/SDA_J19_BookRental-Hibernate/target/" />
@@ -83,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/BookRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="236">
-              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/BookFacade.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="122">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1016,7 +986,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/repository/BookRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
-          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1036,7 +1006,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/awarkoczewski/books/BookFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
